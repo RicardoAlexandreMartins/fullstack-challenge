@@ -1,0 +1,6 @@
+Sabendo que todos os programadores do Viajar Barato possuem amplo conhecimento em .NET e SQL Server, se você fosse construir um novo site do Viajar Barato, qual tecnologia e arquitetura você usaria? Explique o motivo da sua escolha e aponte como usar cada uma delas.
+
+Isso é bastante complicado dizer, pois seria interessante conhecer os requisitos de volumetria, carga do servidor, etc.
+Mas sendo livre para criar, eu criaria uma solução em .NET onde disponibilizaria diversos serviços via Web Api. Esses serviços fariam a parte do backend da aplicação.
+A abordagem dos serviços permite criar uma estrutura única para atender diversas demandas de fontes diferentes, como aplicativos em smartphones, soluções desktop, sites, etc. que utilizariam a mesma fonte de dados (os serviços) para popular as informações do sistema, diminuindo assim a complexidade de manter diferentes versões.
+Não irei discorrer sobre banco de dados, etc. Acredito que para falar disso seria interessante conhecer as informações que se tem, o volume delas e o que se pretende delas, para aí sim falar sobre BI, Big Data e afins.
