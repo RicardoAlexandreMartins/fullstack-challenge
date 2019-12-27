@@ -2,6 +2,7 @@
 using Newtonsoft.Json.Linq;
 using System;
 using System.Collections.Generic;
+using System.Configuration;
 using System.Linq;
 using System.Net.Http;
 using System.Web;
@@ -19,7 +20,7 @@ namespace WebAPI.Controllers
 
             using (var client = new HttpClient())
             {
-                client.BaseAddress = new Uri("https://localhost:44386/api/personagem/");
+                client.BaseAddress = new Uri(ConfigurationManager.AppSettings["enderecoServicos"]);
                 //HTTP GET
                 var responseTask = client.GetAsync("consultar");
                 responseTask.Wait();
